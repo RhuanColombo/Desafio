@@ -1,0 +1,119 @@
+<!--
+Coisas que faltam para fazer:
+O site completo deve ser hospedado no GitHub e o link para o site deve ser enviado no classroom.
+
+Dark Mode (1 ponto): Implementação do botão de dark mode em JavaScript, oferecendo aos usuários a opção de alternar entre temas claro e escuro.
+
+Comentários no Código (1 ponto): Inclusão de comentários significativos no código HTML, CSS e JavaScript para explicar a lógica e a finalidade de
+determinadas partes do código.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digitação Rápida</title>
+    <link rel="stylesheet" href="Desafio.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="https://projetodesenvolve.com.br/"><img src="Desafio/Logo PD.jpg"/></a>
+        <ul>
+            <li><button><a href="#topo">Topo da Página</button></a></li>
+            <li><button><a href="#intro">Introdução</button></a></li>
+            <li><button><a href="#tecnicas">Técnicas</button></a></li>
+            <li><button><a href="#wpm">Palavras por Minuto</button></a></li>
+            <li><button><a href="#teste">Teste de Habilidade</button></a></li>
+            <li><button><a href="#rodape">Rodapé</button></a></li>
+        </ul>
+        <div> <!--Essa div reservada para darkmode-->
+            <input type="checkbox" id="toggle">
+            <label class="darkmode-toggle" for="toggle"></label>
+        </div>
+    </nav>
+    <header class="topo" id="topo">
+            <h1>Um guia sobre técnicas de digitação</h1>
+            <h2>Nesse site você aprenderá o que é digitar, técnicas e história sobre digitação, parâmetros de medida de velocidade, e muito mais</h2>
+    </header>
+    <main>
+        <section class="intro" id="intro"><article>
+            <img class ="typ" src="Desafio/Typing.jpg"/>
+            <h1>Introdução: O que é digitar?</h1>
+            <p>Digitar é o processo de escrever ou inserir texto pressionando teclas em uma máquina de escrever, teclado de computador, telefone celular ou calculadora. Ele pode ser diferenciado de outros meios de entrada de texto, como escrita manual e reconhecimento de fala. O texto pode estar na forma de letras, números e outros símbolos.</p>
+            <p>A <b><u>primeira digitadora</u></b> do mundo foi <i>Lillian Sholes</i>, de Wisconsin (Estados Unidos), filha de <i>Christopher Sholes</i>, que inventou a primeira máquina de escrever prática.</p>
+            <p>Recursos de interface do usuário, como corretor ortográfico e preenchimento automático, servem para facilitar e agilizar a digitação e para prevenir ou corrigir erros que o digitador possa cometer.</p>
+            <p>As <b><u>primeiras máquinas de escrever comerciais</u></b> foram introduzidas em 1874, mas só se tornaram comuns em escritórios nos Estados Unidos depois de meados da década de 1880. A máquina de escrever rapidamente se tornou uma ferramenta indispensável para praticamente toda escrita, exceto correspondência pessoal manuscrita. Foi amplamente utilizado por escritores profissionais, em escritórios, em correspondência comercial em residências particulares e por estudantes que preparavam trabalhos escritos.</p>
+            <p>Após as linhas de máquinas de escrever, <b><u>surgiram os teclados</u></b>. Um teclado de computador é um dispositivo de entrada periférico modelado a partir do teclado de máquina de escrever que usa um arranjo de botões ou teclas para atuar como alavancas mecânicas ou interruptores eletrônicos. Substituindo os primeiros cartões perfurados e a tecnologia de fita de papel, a interação por meio de teclados tipo teleimpressora tem sido o principal método de entrada para computadores desde a década de 1970, complementada pelo mouse do computador desde a década de 1980.</p>
+        </article></section>
+        <br>
+        <section class="tecnicas" id="tecnicas"><article>
+            <h1>Técnicas de digitação</h1>
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Técnicas de digitação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Procurar e clicar</td>
+                        <td>Digitação por toque</td>
+                    </tr>
+                    <tr>
+                        <td>Híbrido</td>
+                        <td>Manuseando</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="blocos" id="blocos">
+                <div class="c1" id="c1">
+                    <h2>> <u>Procurar e clicar</u></h2>
+                    <p><b>Procurar e clicar</b>, também conhecido por digitação com dois dedos, é uma forma comum de digitação em que o digitador pressiona cada tecla individualmente. Em vez de memorizar a posição das teclas, o digitador encontra cada tecla visualmente. Embora uma boa precisão possa ser alcançada, o uso deste método impede que o digitador seja capaz de ver o que foi digitado sem desviar o olhar das teclas, e quaisquer erros de digitação cometidos podem não ser percebidos imediatamente. Devido ao fato de apenas alguns dedos serem usados ​nesta técnica, isso também significa que os dedos são forçados a se mover uma distância muito maior.</p>
+                </div>
+                <div class="c2" id="c2">  
+                    <h2>> <u>Digitação por toque</u></h2>
+                    <p>Nessa técnica, o digitador fica sempre de olho na tela onde as palavras são impressas. A <b>digitação por toque</b> também envolve descansar o pulso mais abaixo, apoiando-o na mesa ou na parte sem teclas do teclado, em vez de levantá-lo toda vez para digitar (o que diminui a probabilidade de causar dores no pulso). Para esta técnica, o digitador deve sentar-se ereto, ligeiramente inclinado para a frente a partir da cintura, colocar os pés apoiados no chão à sua frente, com um pé ligeiramente à frente do outro, e manter os cotovelos próximos aos lados, com os antebraços ligeiramente inclinados para cima em direção ao teclado; os dedos devem estar ligeiramente curvados e o pulso apoiado na mesa.</p>
+                    <p>Muitos digitadores também usam atalhos de teclado ao digitar em um computador. Isso permite que eles editem seus documentos sem precisar tirar as mãos do teclado para usar o mouse. Um exemplo de atalho de teclado é pressionar a tecla Ctrl+S para salvar um documento enquanto digita, ou a tecla Ctrl+Z para desfazer um erro. Outros atalhos são as teclas Ctrl+C para copiar, Ctrl+V para colar, e Ctrl+X para cortar. Muitos digitadores experientes desnvolvem um sentido inato quando cometem um erro e podem pressionar a tecla [←Backspace] e fazer a correção de forma rápida.</p>
+                </div>
+                <div class="c3" id="c3"> 
+                    <h2>> <u>Híbrido</u></h2>
+                    <p>Existem muitos estilos de digitação únicos entre "procurar e clicar" no estilo novato e digitação por toque. Por exemplo, muitos digitadores do tipo "procurar e clicar" têm o layout do teclado memorizado e são capazes de digitar enquanto focam o olhar na tela. Alguns usam apenas dois dedos, enquanto outros usam de 3 a 6 dedos. Alguns usam os dedos de maneira muito consistente, sendo o mesmo dedo usado para digitar sempre o mesmo caractere, enquanto outros variam a maneira como usam os dedos.</p>
+                    <p>Estudos sugerem que o número de dedos utilizados não determinam a velocidade de digitação. Descobriu-se que pessoas que usam estratégias de digitação autodidatas são tão rápidas quanto digitadores treinados; e que em vez do número de dedos, existem outros fatores que predizem velocidade de digitação. Digitadores rápidos mantêm as mãos fixas em uma posição, em vez de movê-las sobre o teclado, e de forma mais consistente usam o mesmo dedo para digitar uma determinada letra. Para citar a Profª Dra. Anna Feit: <q>Ficamos surpresos ao observar que as pessoas que fizeram um curso de digitação tiveram desempenho médio semelhante ao das pessoas que ensinaram digitação para si mesmas e usaram apenas 6 dedos em média.</q></p>
+                </div>
+                <div class="c4" id="c4"> 
+                    <h2>> <u>Manuseando</u></h2>
+                    <p>Uma tendência de digitação do <i>final do século 20</i>, usada principalmente em dispositivos com teclados pequenos (como PDAs e smartphones), é a digitação com o polegar. Isso pode ser feito usando apenas um polegar ou ambos os polegares, com digitadores mais proficientes atingindo velocidades de 100 palavras por minuto. Semelhante aos teclados de desktop e dispositivos de entrada, se um usuário usar excessivamente teclas que precisam ser pressionadas com força e/ou tiverem layouts pequenos e pouco ergonômicos, isso poderá causar tendinite no polegar ou outras lesões por esforço repetitivo.</p>
+                </div>
+            </div>
+        </article></section>
+        <br>
+        <section class="wpm" id="wpm"><article>
+            <h1>Palavras por Minuto</h1>
+            <p><b><u>Palavras por Minuto</u></b> (<abbr title="Words per Minute">WPM</abbr>) é uma medida de velocidade de digitação, comumente usada em recrutamento. Para fins de medição de WPM, uma palavra é padronizada para cinco caracteres ou pressionamentos de tecla. Portanto, “<i>cinza</i>” conta como uma palavra, mas “<i>manufatura</i>” conta como duas.</p>
+            <p>Os benefícios de uma <b><u>medição padronizada da velocidade</u></b> de entrada são que ela permite a comparação entre idiomas e limites de hardware. A velocidade de uma operadora de língua <i>africâner</i> na Cidade do Cabo pode ser comparada com a de uma operadora de língua <i>francesa</i> em Paris.</p>
+            <p>Uma medida menos comum da velocidade de um digitador, o <b>CPM</b> é usado para identificar o número de caracteres digitados por minuto. Esta é uma medida comum para programas de digitação ou tutores de digitação, pois pode fornecer uma medida mais precisa da velocidade de digitação de uma pessoa sem a necessidade de digitar por um período prolongado de tempo. O fator de conversão comum entre WPM e CPM é 5. Também é usado ocasionalmente para associar a velocidade de um leitor com a quantidade que ele leu. O CPM também foi aplicado às impressoras do século 20, mas as impressoras modernas e mais rápidas usam mais comumente o PPM (<i>páginas por minuto</i>).</p>
+            <p>A velocidade de digitação mais rápida de todos os tempos, 216 palavras por minuto, foi alcançada por <i>Stella Pajunas-Garnand</i>, de Chicago, em 1946, em um IBM elétrico usando o layout de teclado QWERTY. Em 2005, a escritora <i>Barbara Blackburn</i> era a digitadora de inglês mais rápida do mundo, de acordo com o Livro Guinness de Recordes Mundiais. Usando o layout de teclado Dvorak, ela manteve 150ppm por 50 minutos e 170ppm por períodos mais curtos, com velocidade máxima de 212ppm. Barbara Blackburn, que foi reprovada nas aulas de digitação QWERTY no ensino médio, encontrou pela primeira vez o layout Dvorak em 1938 e então aprendeu rapidamente a atingir velocidades de digitação muito altas. Além disso, ocasionalmente viajava dando demonstrações de digitação rápida durante sua carreira de secretária. Ela apareceu no Late Night com <i>David Letterman</i> em 24 de janeiro de 1985, mas sentiu que Letterman fez dela um espetáculo.</p>
+            <p>O recente surgimento de vários sites de digitação competitivos permitiu que digitadores rápidos em teclados de computador surgissem junto com novos registros, embora muitos deles não sejam verificáveis. Alguns registros notáveis ​​​​e verificados incluem 255ppm em um teste de palavras aleatórias de um minuto por um usuário com o nome de usuário <i>slekap</i> e ocasionalmente <i>bailey</i>, 213ppm em um teste de palavras aleatórias de 1 hora por Joshua Hu, média de 221ppm em 10 citações aleatórias de <i>Joshua Hu</i> e primeiro lugar no 2020 <b><u>Ultimate Typing Championship de Anthony Ermollin</u></b> com base em uma média de 180,88ppm em textos de vários comprimentos. Essas três pessoas são os digitadores mais rápidos mais comumente citados em comunidades de digitação on-line. Todos os seus recordes foram definidos no layout de teclado QWERTY.</p>
+        </div>
+        </article></section>
+        <br>
+        <section class="teste" id="teste">
+            <article class="art-teste" id="art-teste">
+                <h1>Teste de habilidade</h1>
+                <P>Abaixo segue um jogo onde você pode testar ou melhorar suas habilidades de digitação. Escreva qualquer coisa dentro da caixa para dar início ao jogo; o objetivo é escrever a frase o mais rápido possível igual ao exemplar que aparecer. Você em tese pode roubar com copia e cola, entretanto isso sai do propósito do teste.</P>
+            </article>
+            <section class="Digitação" id="Digitação">
+                <div class="timer" id="timer"></div>
+                <div class="container">
+                    <div class="display-frase" id="display-frase"></div>
+                    <textarea class="input-frase" id="input-frase"></textarea>
+            </section>
+        </section>
+    </main>
+    <footer class="rodape" id="rodape">
+        <h2>-Rhuan Costa Colombo-</h2>
+        <h2>-rhuan.colombo@pditabira.com-</h2>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

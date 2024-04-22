@@ -1,0 +1,486 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-padding-top: 170px;
+}
+
+nav img{
+    border-radius: 40%;
+    width: 75px;
+    border: 1px solid black;
+    float: inline-start;
+}
+
+nav img:hover {
+    box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.5);
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: lime;
+}
+a:active {
+    color: red;
+}
+
+main {
+    text-align: justify;
+    padding: 3%;
+    background-image: url("Desafio/Fundo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Trocar color de white para black*/
+.intro {border-radius: 25px; color: white; background-color: rgba(240, 128, 128, 0.771); padding-top: 1px;}
+.intro p, .intro img {padding: 5px; overflow: hidden;}
+
+.wpm {border-radius: 15px; color: white; background-color: rgba(240, 128, 128, 0.771); padding-top: 1px;}
+.wpm p {padding: 5px;}
+
+.teste {border-radius: 25px; color: white; background-color: rgba(240, 128, 128, 0.771); padding-top: 1px;}
+.teste p {padding: 5px;}
+
+.tecnicas {border-radius: 25px; background-color: rgba(240, 128, 128, 0.771); padding-top: 1px;}
+
+main h1 {font-size: 2.2rem;
+    margin: 10px;
+    color: white;
+    text-align: center;}
+main h2 {font-size: 1.2rem;}
+main p {font-size: 16px; text-indent: 25px; color: white;}
+
+.table {margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color:lightcoral;
+    color: white;}
+
+table, th, td {
+    border: rgb(130, 64, 41) 2px solid;
+    text-align: center;
+    padding: 2px 3px 2px 3px;
+    border-collapse: collapse;
+}
+
+thead th {
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    background: lightcoral;
+    border-top: 2px solid black;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main .Digitação {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+body {
+    margin: 0;
+}
+
+body .input-frase {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: lightcoral;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer {
+    font-size: 3rem;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.display-frase {
+    margin-bottom: 1rem;
+    margin-left:calc(1rem + 2px);
+    margin-right:calc(1rem + 2px);
+    font-size: 1rem;
+    color: white
+}
+
+.input-frase {
+    background-color: transparent;
+    border: 2px solid rgb(180, 98, 98);
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: white
+}
+
+.input-frase:focus {
+    border-color: rgb(104, 0, 0)
+}
+
+.correct {
+    color: greenyellow;
+}
+
+.incorrect {
+    color: darkred;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 770px)
+{
+    header {
+        padding: 90px 50px 10px 50px;
+        color: orange;
+        -webkit-text-stroke: 1px black;
+        background-image: url(Desafio/Teclado.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header h1 {padding-top: 5%; font-size: 2rem; text-align: center;}
+    header h2 {font-size: 1.4rem; text-align: center; margin-bottom: 0px;}
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: rgb(240, 128, 128);
+        border-bottom: 2px solid black;
+        padding: 7px 10px 5px 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin-inline: 1%;
+        align-self: center;
+    }
+    
+    nav .select{
+        float: right;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        padding: 0 5px 5px;
+        width:200px;
+        background-color:#f8c1c1;
+    }
+
+    button {
+        background-color: #f8c1c1;
+        font-size: 14px;
+        margin: 2px 2px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .intro img {margin-right: 1%;
+        height:12.8em;
+        width:12.8em;
+        float:right;
+        border-radius: 7%;}
+    
+    .blocos{color: white}
+    .c1 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(240, 128, 128, 0.771);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c2 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(255, 127, 80, 0.682);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c3 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(240, 128, 128, 0.771);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c4 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(255, 127, 80, 0.682);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c1 h2 {text-align: center;}
+    .c2 h2 {text-align: center;}
+    .c3 h2 {text-align: center;}
+    .c4 h2 {text-align: center;}
+}
+@media only screen and (min-width: 770px) and (max-width: 992px)
+{
+    header {
+        padding: 50px 50px 10px 50px;
+        color: orange;
+        -webkit-text-stroke: 1px black;
+        background-image: url(Desafio/Teclado.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header h1 {padding-top: 5%; font-size: 2rem; text-align: center;}
+    header h2 {font-size: 1.4rem; text-align: center; margin-bottom: 0px;}
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: rgb(240, 128, 128);
+        border-bottom: 2px solid black;
+        padding: 7px 10px 5px 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin-inline: 1%;
+        align-self: center;
+    }
+    
+    nav .select{
+        float: right;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        padding: 0 5px 5px;
+        width:200px;
+        background-color:#f8c1c1;
+    }
+
+    button {
+        background-color: #f8c1c1;
+        font-size: 14px;
+        margin: 2px 2px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .intro img {margin-right: 1%;
+        height:22.8em;
+        width:22.8em;
+        float:right;
+        border-radius: 7%;}
+    
+    .blocos{color: white}
+    .c1 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(240, 128, 128, 0.771);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c2 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(255, 127, 80, 0.682);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c3 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(240, 128, 128, 0.771);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c4 {height: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(255, 127, 80, 0.682);
+        border: rgb(130, 64, 41) 2px solid;}
+    .c1 h2 {text-align: center;}
+    .c2 h2 {text-align: center;}
+    .c3 h2 {text-align: center;}
+    .c4 h2 {text-align: center;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1120px)
+{
+    header {
+        padding: 100px 50px 25px 50px;
+        color: coral;
+        -webkit-text-stroke: 1px black;
+        background-image: url(Desafio/Teclado.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header h1 {font-size: 3rem; text-align: center;}
+    header h2 {font-size: 2rem; text-align: center;}
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: lightcoral;
+        border-bottom: 2px solid black;
+        padding: 10px 10px 5px 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin-inline: 3%;
+        align-self: center;
+    }
+    
+    nav .select{
+        float: right;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 0 5px 5px;
+        width:200px;
+        background-color:#f8c1c1;
+    }
+
+    button {
+        background-color: #f8c1c1;
+        font-size: 16px;
+        margin: 2px 2px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .intro img {margin-right: 10px;
+        height:28.5em;
+        width:28.5em;
+        float:right;
+        border-radius: 7%;}
+
+    .blocos{display: inline-flex;
+        color: white}
+    .c1 {width: 25%;
+        height: auto;
+        background-color: rgba(240, 128, 128, 0.771);
+        padding:5px;
+        border: rgb(130, 64, 41) 2px solid;}
+    .c2 {width: 25%;
+        height: auto;
+        background-color: rgba(255, 127, 80, 0.682);
+        padding:5px;
+        border-top: rgb(130, 64, 41) 2px solid;;
+        border-bottom: rgb(130, 64, 41) 2px solid;}
+    .c3 {width: 25%;
+        height: auto;
+        background-color: rgba(240, 128, 128, 0.771);
+        padding:5px;
+        border-top: rgb(130, 64, 41) 2px solid;
+        border-bottom: rgb(130, 64, 41) 2px solid;
+        border-left: rgb(130, 64, 41) 2px solid;}
+    .c4 {width: 25%;
+        height: auto;
+        background-color: rgba(255, 127, 80, 0.682);
+        padding:5px;
+        border: rgb(130, 64, 41) 2px solid;}
+    .c1 h2 {text-align: center;}
+    .c2 h2 {text-align: center;}
+    .c3 h2 {text-align: center;}
+    .c4 h2 {text-align: center;}
+}
+
+@media only screen and (min-width: 1120px)
+{
+    header {
+        padding: 100px 50px 25px 50px;
+        color: coral;
+        -webkit-text-stroke: 1px black;
+        background-image: url(Desafio/Teclado.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header h1 {font-size: 3rem; text-align: center;}
+    header h2 {font-size: 2rem; text-align: center;}
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: lightcoral;
+        border-bottom: 2px solid black;
+        padding: 10px 10px 5px 10px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin-inline: 3%;
+        align-self: center;
+    }
+    
+    nav .select{
+        float: right;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 0 5px 5px;
+        width:200px;
+        background-color:#f8c1c1;
+    }
+
+    button {
+        background-color: #f8c1c1;
+        font-size: 16px;
+        margin: 2px 2px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .intro img {margin-right: 10px;
+        height:28.5em;
+        width:28.5em;
+        float:right;
+        border-radius: 7%;}
+
+    .blocos{display: inline-flex;
+        color: white}
+    .c1 {width: 25%;
+        height: auto;
+        background-color: rgba(240, 128, 128, 0.771);
+        padding:5px;
+        border: rgb(130, 64, 41) 2px solid;}
+    .c2 {width: 25%;
+        height: auto;
+        background-color: rgba(255, 127, 80, 0.682);
+        padding:5px;
+        border-top: rgb(130, 64, 41) 2px solid;;
+        border-bottom: rgb(130, 64, 41) 2px solid;}
+    .c3 {width: 25%;
+        height: auto;
+        background-color: rgba(240, 128, 128, 0.771);
+        padding:5px;
+        border-top: rgb(130, 64, 41) 2px solid;
+        border-bottom: rgb(130, 64, 41) 2px solid;
+        border-left: rgb(130, 64, 41) 2px solid;}
+    .c4 {width: 25%;
+        height: auto;
+        background-color: rgba(255, 127, 80, 0.682);
+        padding:5px;
+        border: rgb(130, 64, 41) 2px solid;}
+    .c1 h2 {text-align: center;}
+    .c2 h2 {text-align: center;}
+    .c3 h2 {text-align: center;}
+    .c4 h2 {text-align: center;}
+}
